@@ -1,5 +1,6 @@
 
 S src/index
+S src/index/util
 B _build_byte_debug/ReasonExampleProject/publicInnerModules
 B _build_byte_debug/ReasonExampleProject/privateInnerModules
 B _build_byte_debug/ReasonExampleProject
