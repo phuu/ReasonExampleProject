@@ -8,16 +8,16 @@
     "CommonML": "git://github.com/jordwalke/CommonML.git"
   },
   "scripts": {
-    "build": "node ./node_modules/CommonML/build.js",
-    "start": "./_build_byte/ReasonExampleProject/reasonExampleProject.out"
+    "build": "node ./node_modules/CommonML/build.js --forDebug=true --jsCompile=true"
   },
   "CommonML": {
-    "exports": ["MyProjectMod"],
+    "exports": ["Index"],
     "extensions": [{
       "interface": ".rei",
       "implementation": ".re"
     }],
     "preprocessor": "refmt",
+    "findlibPackages": [{"dependency": "js_of_ocaml"}],
     "compileFlags": ["-w","-30","-w","-40", "-bin-annot"],
     "linkFlags": [],
     "jsPlaceBuildArtifactsIn": "webAppRoot",

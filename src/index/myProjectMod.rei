@@ -1,1 +1,0 @@
-let myProjectValue: string;
